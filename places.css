@@ -1,0 +1,87 @@
+For Teams
+Search…
+
+Join Stack Overflow to learn, share knowledge, and build your career.
+
+Home
+PUBLIC
+Questions
+Tags
+Users
+FIND A JOB
+Jobs
+Companies
+TEAMS
+Stack Overflow for Teams – Collaborate and share knowledge with a private group.
+CSS image gallery with name at bottom of image
+Asked 5 years, 1 month ago
+Active 5 years, 1 month ago
+Viewed 2k times
+
+1
+
+
+I am trying to make an image gallery with the name of the image sitting inside the image at the bottom of it. I have been unsuccessful so far.
+
+Picture of desired result:
+
+enter image description here
+
+HTML:
+
+<!-- start content -->
+    <div class='content'>
+        <div class='photo'>
+            <div class='image'><a href='#'><img src='https://i.imgur.com/PC68FSTb.jpg' alt='profile picture' width='300' height='300'></a></div>
+            <div class='photo-name'>Name</div>
+        </div>
+        <div class='photo'>
+            <div class='image'><a href='#'><img src='https://i.imgur.com/PC68FSTb.jpg' alt='profile picture' width='300' height='300'></a></div>
+            <div class='photo-name'>Name</div>
+        </div>
+        <div class='photo'>
+            <div class='image'><a href='#'><img src='https://i.imgur.com/PC68FSTb.jpg' alt='profile picture' width='300' height='300'></a></div>
+            <div class='photo-name'>Name</div>
+        </div>
+        <div class='photo'>
+            <div class='image'><a href='#'><img src='https://i.imgur.com/PC68FSTb.jpg' alt='profile picture' width='300' height='300'></a></div>
+            <div class='photo-name'>Name</div>
+        </div>
+        <div class='photo'>
+            <div class='image'><a href='#'><img src='https://i.imgur.com/PC68FSTb.jpg' alt='profile picture' width='300' height='300'></a></div>
+            <div class='photo-name'>Name</div>
+        </div>
+    </div>
+    <!-- end content -->
+CSS:
+
+.content {
+    background-color: #404040;
+    width: 940px;
+    margin: 0 auto;
+    padding: 20px 10px;
+    overflow: hidden;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    align-items: center;
+}
+
+.photo {
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 298px;
+    height: 298px;
+    margin-top: 10px;
+    margin-left: 10px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+.photo-name {
+  position: absolute;
+  width: 100%;
+  bottom: 30px;
+  text-align: center;
+  background-color: White;
+}
